@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A personal portfolio: background, selected projects, and interests.">
+<meta name="description" content="Linru Zhang — research in privacy-preserving AI, fully homomorphic encryption, and cryptography.">
 <title>Linru Zhang — Personal Website</title>
 <style>
 * { box-sizing: border-box; }
@@ -41,19 +41,113 @@ footer { border-top: 1px solid #ddd; padding: 24px 0 36px; color: #666; font-siz
  .hero { padding-top: 36px; }
  h1 { font-size: 29px; }
 }
+
+header { align-items: flex-start; flex-direction: column; gap: 12px; }
+nav { gap: 8px 18px; }
+.hero { padding-bottom: 32px; }
+.hero h1 { margin-bottom: 8px; }
+.affiliation { color: #555; margin-bottom: 20px; }
+.entry { margin-bottom: 24px; }
+.entry:last-child { margin-bottom: 0; }
+.date { color: #666; font-size: 14px; }
+ul { padding-left: 22px; }
+.publications { padding-left: 24px; }
+.publications li { margin-bottom: 18px; padding-left: 4px; overflow-wrap: anywhere; }
+.publications strong { font-weight: 600; }
+section > h3 { margin-top: 26px; }
+.contact-links { overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
-<header><a class="brand" href="#">Linru Zhang.</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></header>
+<header>
+<a class="brand" href="#">Linru Zhang</a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#manuscripts">Manuscripts</a><a href="#patents">Patents</a><a href="#service">Service</a><a href="#contact">Contact</a>
+</nav>
+</header>
 <main id="main">
-<div class="hero"><div><h1>Hello, I'm Linru Zhang.</h1><p class="intro">Welcome to my homepage.</div></div>
-<section id="about" class="section-grid"><div><h2>About me</h2></div><div><p class="body-copy">[coming soon]</p></div></div></section>
+<div class="hero">
+<h1>Linru Zhang</h1>
+<p class="affiliation">Research Fellow, DTC<br>Nanyang Technological University, Singapore</p>
+<p class="intro">My research focuses on privacy-preserving AI and machine learning, fully homomorphic encryption (FHE), and cryptography.</p>
+<p class="contact-links"><a href="mailto:linru.zhang@ntu.edu.sg">Email</a> · <a href="https://github.com/zhanglr3">GitHub</a></p>
+</div>
+<section id="about">
+<h2>About</h2>
+<p>I am a Research Fellow in DTC at Nanyang Technological University, where I have worked with Prof. Huaxiong Wang since June 2021. I received my Ph.D. in Computer Science from The University of Hong Kong in March 2021, supervised by Prof. Siu-Ming Yiu, with a research focus on cryptography.</p>
+<p>I received my B.Sc. from Sun Yat-Sen University in June 2016, majoring in Computer Science with a double major in Mathematics.</p>
+</section>
+<section id="education">
+<h2>Education</h2>
+<div class="entry"><h3>The University of Hong Kong</h3>
+<p>Ph.D. in Computer Science<br><span class="date">September 2016 – March 2021</span></p>
+<ul><li>Supervisor: Prof. Siu-Ming Yiu</li><li>Research topic: Cryptography</li><li>Postgraduate Scholarship of The University of Hong Kong</li></ul></div>
+<div class="entry"><h3>Sun Yat-Sen University</h3>
+<p>Bachelor of Science<br><span class="date">September 2012 – June 2016</span></p>
+<ul><li>Major in Computer Science; double major in Mathematics</li><li>Overall GPA: 90/100 (top 5%)</li><li>Scholarship for Outstanding Students</li></ul></div>
+</section>
+<section id="publications">
+<h2>Publications</h2>
+<h3>Journal Papers</h3>
+<ol class="publications">
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Xianhui Lu, Huaxiong Wang, Kwok-Yan Lam: LEAF: A Low-Latency Evaluation Architecture for Feedforward Block in Privacy-Preserving Transformer Inference. In IEEE Transactions on Dependable and Secure Computing (IEEE TDSC 2026)</li>
+<li>Kwok-Yan Lam, Xianhui Lu, <strong>Linru Zhang</strong> , Xiangning Wang, Huaxiong Wang, Si Qi Goh: Efficient FHE-based Privacy-Enhanced Neural Network for Trustworthy AI-as-a-Service. In IEEE Transactions on Dependable and Secure Computing (IEEE TDSC 2024)</li>
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Jiabo Wang, Rachael Pung, Huaxiong Wang, Kwok-Yan Lam: An Efficient FHE-Enabled Secure Cloud-Edge Computing Architecture for IoMTs Data Protection With Its Application to Pandemic Modelling. In IEEE Internet of Things Journal (IEEE IoTJ 2024)</li>
+</ol>
+<h3>Conference Papers</h3>
+<ol class="publications">
+<li><strong>Linru Zhang</strong>, Jun Jie Sim, Xiangning Wang, Jiahao Zhong, Kaiyu Zhou, Huanyi Ye, Yongsen Zheng, Lushan Song, Xiaojian Liang, Yingting Liu, Yujing Sun, Huaxiong Wang, Pu Duan, Kwok-Yan Lam: Felid: A Flexible and Efficient Design for Transformer Fine-Tuning over Encrypted Data. In The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026) , Oral Presentation.</li>
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Jun Jie Sim, Zhicong Huang, Jiahao Zhong, Huaxiong Wang, Pu Duan, Kwok-Yan Lam: MOAI: Module-Optimizing Architecture for Non-Interactive Secure Transformer Inference. In The Fourteenth International Conference on Learning Representations (ICLR 2026)</li>
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Xianhui Lu, Huaxiong Wang, Adhiraj Saxena, Kwok-Yan Lam, “FastFFN: Low-Latency Feedforward Block Evaluation for Secure Transformer Inference”, In The 5th Annual FHE.org Conference on Fully Homomorphic Encryption (a co-located event of Real World Crypto 2026)</li>
+<li>Gongxian Zeng, Junzuo Lai, Zhengan Huang, <strong>Linru Zhang</strong> , Xiangning Wang, Kwok-Yan Lam, Huaxiong Wang, Jian Weng: Non-Interactive Zero-Knowledge Functional Proofs. In 29th International Conference on the Theory and Application of Cryptology and Information Security (Asiacrypt 2023)</li>
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Yuechen Chen, Siu-Ming Yiu: Leakage-Resilient Inner-Product Functional Encryption in the Bounded-Retrieval Model. In 22nd International Conference on Information and Communications Security (ICICS 2020)</li>
+<li><strong>Linru Zhang</strong>, Xiangning Wang, Yuechen Chen, Siu-Ming Yiu: Adaptive-Secure Identity-Based InnerProduct Functional Encryption and its Leakage-Resilience. In 21st International Conference on Cryptology in India (Indocrypt 2020)</li>
+<li>Yuechen Chen, <strong>Linru Zhang</strong> , Siu-Ming Yiu: Decentralized Multi-Client Attribute Based Functional Encryption. In 17th International Conference on Security and Cryptography (SECRYPT 2020)</li>
+<li><strong>Linru Zhang</strong>, Yuechen Chen, Jun Zhang, Meiqi He, Siu-Ming Yiu: From Quadratic Functions to Polynomials: Generic Functional Encryption from Standard Assumptions. In 3rd International Conference on Codes, Cryptology, and Information Security (C2SI 2019) .</li>
+<li><strong>Linru Zhang</strong>, Gongxian Zeng, Yuechen Chen, Nairen Cao, Siu-Ming Yiu, Zheli Liu: OC-ORAM: Constant Bandwidth ORAM with Smaller Block Size using Oblivious Clear Algorithm. In 16th International Joint Conference on e-Business and Telecommunications (ICETE 2019)</li>
+<li>Gongxian Zeng, Meiqi He, <strong>Linru Zhang</strong> , Jun Zhang, Yuechen Chen, Siu-Ming Yiu: Secure Compression and Pattern Matching Based on Burrows-Wheeler Transform. In 16th Annual Conference on Privacy, Security and Trust (PST 2018)</li>
+<li>Yuechen Chen, <strong>Linru Zhang</strong>, Siu-Ming Yiu: Function Hiding Functional Encryption for Inner Product in Public Key Setting. In Central European Conference on Cryptology 2018 (CECC 2018)</li>
+<li>Meiqi He, Gongxian Zeng, Jun Zhang, <strong>Linru Zhang</strong> , Yuechen Chen, Siu-Ming Yiu: A New PrivacyPreserving Searching Model on Blockchain. In 21st International Conference on Information Security and Cryptology (ICISC 2018)</li>
+<li>Jun Zhang, <strong>Linru Zhang</strong> , Meiqi He, Siu-Ming Yiu: Privacy-Preserving Disease Risk Test Based on Bloom Filters. In 19th International Conference on Information and Communications Security (ICICS 2017)</li>
+<li>Xiaoqi Yu, Nairen Caom <strong>Linru Zhang</strong>, Gongxian Zeng, and Siu-Ming Yiu: Oblivious Memory Trace in Graphics Hardware with Constant Blowup. In 5th International Cryptology and Information Security Conference (Cryptology 2016)</li>
+<li>Nairen Cao, Xiaoqi Yu, Yufang Yang, <strong>Linru Zhang</strong> , Siu-Ming Yiu: An ORAM Scheme with Improved Worst-Case Computational Overhead. In 17th International Conference on Information and Communications Security (ICICS 2015)</li>
+</ol>
+</section>
+<section id="manuscripts">
+<h2>Manuscripts Under Review</h2>
+<ol class="publications">
+<li><strong>Linru Zhang</strong>, Jiahao Zhong, Yongsen Zheng, Xiangning Wang, Huaxiong Wang, Kwok-Yan Lam: CtrlFormer: Efficient FHE-based Secure Transformer Inference Without Feature Explosion via Functional Bootstrapping.</li>
+<li>Jiahao Zhong, Xiangning Wang, <strong>Linru Zhang</strong> , Yongsen Zheng, Yujing Sun, Ziyao Liu, Huaxiong Wang, Kwok-Yan Lam: You Can’t Read My Mind: Non-interactive Secure Autoregressive LLM Inference.</li>
+<li>Gongxian Zeng, Zhengan Huang, <strong>Linru Zhang</strong>, Xiangning Wang, Xiangle Liu, Huaxiong Wang, KwokYan Lam, Junzuo Lai: Towards AI-Driven Pre-Constrained Content Moderation: A Theoretical Framework.</li>
+<li>Chen chen, Xiang Gao, Xianshun Wang, Chengran Li, Shengyu Xia, Xueluan Gong, <strong>Linru Zhang</strong> , Qian Wang, Kwok-Yan Lam: The Art of Mixology: Mixup-based Obfuscation for Privacy-Preserving Split Learning in Large Language Models.</li>
+<li><strong>Linru Zhang</strong>, Yann Fraboni, Ziyao Liu, Kai Wey Lim, Xinyue Wu, Huajie Shen, Shishuai Du, Weize Wang, Yingting Liu, Yujing Sun, Pu Duan, Kwok-Yan Lam: LEAP: Lean and Efficient Homomorphic Multi-Pattern Matching.</li>
+<li>Yuqi Cheng, Ziyao Liu, Koon Ming Chan, <strong>Linru Zhang</strong> , Jiahao Zhong, Yujing Sun, Huaxiong Wang, Kwok-Yan Lam: Secure Pattern Matching: A Survey of Techniques and Applications.</li>
+</ol>
+</section>
+<section id="patents">
+<h2>Patents</h2>
+<ol class="publications">
+<li>Kwok-Yan Lam, Huaxiong Wang, Xianhui Lu, <strong>Linru Zhang</strong>, and Xiangning Wang: Privacy-Preserving Neural Network Model And Privacy-Preserving Prediction Using The Privacy-Preserving Neural Network Model. PCT Patent International Filing (claiming priority to earlier SG application nos. 10202201824W &amp; 10202205037W), 15 February 2023, PCT Application No: PCT/SG2023/050085. International Publication No: WO 2023/163652 A2, 31 August 2023.</li>
+<li>Kwok-Yan Lam, Huaxiong Wang, Xianhui Lu, <strong>Linru Zhang</strong> , and Xiangning Wang: Method And System For Secure Training Of Neural Network PCT Application No: PCT/SG2025/050055. International Publication No: WO 2025/159697 A1, 31 July 2025.</li>
+</ol>
+</section>
+<section id="service">
+<h2>Academic Service</h2>
+<ul><li>Journal reviewer: IEEE TDSC, IEEE TIFS, and IEEE TMC</li>
+<li>Conference reviewer: AAAI, ACISP, AsiaCCS, ESORICS, ICLR, and NeurIPS</li>
+<li>Top Reviewer, NeurIPS 2026</li></ul>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Nanyang Technological University, Singapore</p>
+<p class="contact-links">Email: <a href="mailto:linru.zhang@ntu.edu.sg">linru.zhang@ntu.edu.sg</a><br>
+Alternative email: <a href="mailto:lrzhang3@gmail.com">lrzhang3@gmail.com</a><br>
+GitHub: <a href="https://github.com/zhanglr3">github.com/zhanglr3</a></p>
+</section>
 </main>
-<footer><span>© Linru Zhang. Personal website.</span></footer>
+<footer>© Linru Zhang</footer>
 </div>
 </body>
 </html>
-
-<!-- Republish personal homepage -->
