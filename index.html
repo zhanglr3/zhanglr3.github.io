@@ -56,6 +56,22 @@ ul { padding-left: 22px; }
 .publications strong { font-weight: 600; }
 section > h3 { margin-top: 26px; }
 .contact-links { overflow-wrap: anywhere; }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list li { display: grid; grid-template-columns: 100px 1fr; gap: 16px; margin-bottom: 16px; }
+.news-list li:last-child { margin-bottom: 0; }
+.pet-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; list-style: none; margin: 0; padding: 0; }
+.pet-list li { min-width: 0; overflow: hidden; background: #fafafa; border: 1px solid #ddd; border-radius: 8px; }
+.pet-photo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.pet-photo-deli { object-position: center 75%; }
+.pet-photo-coco { object-position: center 65%; }
+.pet-details { padding: 16px; }
+.pet-list p { margin: 0 0 10px; color: #555; }
+.pet-list p:last-child { margin-bottom: 0; }
+.pet-list .pet-birthday { font-size: 13px; color: #666; }
+@media (max-width: 480px) {
+ .news-list li { grid-template-columns: 1fr; gap: 4px; }
+ .pet-list { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -64,7 +80,7 @@ section > h3 { margin-top: 26px; }
 <header>
 <a class="brand" href="#">Linru Zhang</a>
 <nav aria-label="Main navigation">
-<a href="#about">About</a><a href="#education">Education</a><a href="#publications">Publications</a>
+<a href="#about">About</a><a href="#news">News</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#family">Furry Family</a>
 </nav>
 </header>
 <main id="main">
@@ -72,6 +88,13 @@ section > h3 { margin-top: 26px; }
 <h2>About</h2>
 <p>I am a Research Fellow in DTC at Nanyang Technological University, where I have worked with Prof. Huaxiong Wang and Prof. Kwok-Yan Lam since June 2021. </p>
 <p>My research focuses on Privacy-enhancing techniques, Fully homomorphic encryption (FHE), and Applied cryptography.</p>
+</section>
+<section id="news">
+<h2>News</h2>
+<ul class="news-list">
+<li><time class="date" datetime="2026-09">Sept 2026</time><span><strong>Felid</strong> was accepted at NeurIPS 2026 for an <strong>oral presentation</strong> — one of 112 oral presentations selected from more than 30,000 submissions.</span></li>
+<li><time class="date" datetime="2026-08">Aug 2026</time><span><strong>LEAF</strong> was accepted by IEEE Transactions on Dependable and Secure Computing (IEEE TDSC).</span></li>
+</ul>
 </section>
 <section id="education">
 <h2>Education</h2>
@@ -121,6 +144,36 @@ section > h3 { margin-top: 26px; }
 <ul><li>Journal reviewer: IEEE TDSC, IEEE TIFS, and IEEE TMC</li>
 <li>Conference reviewer: AAAI, ACISP, AsiaCCS, ESORICS, ICLR, and NeurIPS</li>
 <li>Top Reviewer, NeurIPS 2026</li></ul>
+</section>
+<section id="family">
+<h2>Meet My Furry Family</h2>
+<p>Meet my two cats, Deli and Coco, and my dog, Berry.</p>
+<ul class="pet-list">
+<li>
+<img class="pet-photo pet-photo-deli" src="Deli.JPG" alt="Deli, a Ragdoll cat, walking on grass in his harness" loading="lazy" decoding="async" width="1392" height="2088">
+<div class="pet-details">
+<h3>Deli 🍐</h3>
+<p class="pet-birthday">Born <time datetime="2021-08-05">5 August 2021</time></p>
+<p>Our Ragdoll boy, whom we usually call Lili. He loves his daily outdoor walks.</p>
+</div>
+</li>
+<li>
+<img class="pet-photo pet-photo-coco" src="Coco.jpeg" alt="Coco, a Ragdoll cat, watching her surroundings by the water" loading="lazy" decoding="async" width="3024" height="4032">
+<div class="pet-details">
+<h3>Coco 🥥</h3>
+<p class="pet-birthday">Born <time datetime="2021-09-05">5 September 2021</time></p>
+<p>Our Ragdoll girl, whom we usually call Meimei. She enjoys observing the world around her.</p>
+</div>
+</li>
+<li>
+<img class="pet-photo" src="berry.JPG" alt="Berry, a Cavapoo dog in a red coat, exploring a mountain landscape" loading="lazy" decoding="async" width="4672" height="4672">
+<div class="pet-details">
+<h3>Berry 🍓</h3>
+<p class="pet-birthday">Born <time datetime="2024-03-11">11 March 2024</time></p>
+<p>Our Cavapoo girl who behaves like a cat. A little explorer, she visited Italy with her humans in October 2026.</p>
+</div>
+</li>
+</ul>
 </section>
 <section id="contact">
 <h2>Contact</h2>
